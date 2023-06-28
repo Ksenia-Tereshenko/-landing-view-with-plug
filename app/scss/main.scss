@@ -273,7 +273,7 @@ header {
       transition: ease-out .3s;
       max-height: $s100px;
       overflow: auto;
-      border-radius: 0 0 $s8px $s8px;
+      border-radius: 0 0 0 $s8px;
     }
 
     &_li {
