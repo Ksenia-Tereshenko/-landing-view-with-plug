@@ -1,0 +1,53 @@
+
+<header>
+    <a href="index.html" class="header__logo">
+        <img class="header__logo_icon" src="images/logoIcon.svg" alt="Domino logo">
+        <img class="header__logo_text" src="images/logoText.svg" alt="Domino logo">
+    </a>
+    @@include('_header-menu.html')
+    <div class="header__buttons">
+      <div class="header__langs">
+        <div class="header__langs_select">
+          Ru 
+          <svg class="header__langs_select-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 22 12" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8643 11.1968C21.1572 10.9039 21.1572 10.4291 20.8643 10.1362L11.531 0.802841C11.2381 0.509948 10.7632 0.509948 10.4703 0.802841L1.13699 10.1362C0.844095 10.4291 0.844095 10.9039 1.13699 11.1968C1.42988 11.4897 1.90476 11.4897 2.19765 11.1968L11.0007 2.39383L19.8037 11.1968C20.0965 11.4897 20.5714 11.4897 20.8643 11.1968Z" fill="currentClor"/>
+          </svg>
+        </div>
+        <ul class="header__langs_ul">
+          <li class="header__langs_li" title="Английский">En</li>
+          <li class="header__langs_li" title="Азербайджанский">Az</li>
+          <li class="header__langs_li" title="Арабский">Ar</li>
+          <li class="header__langs_li" title="Болгарский">Bg</li>
+          <li class="header__langs_li" title="Датский">Da</li>
+          <li class="header__langs_li" title="Итальянский">It</li>
+          <li class="header__langs_li" title="Каннада">Kn</li>
+          <li class="header__langs_li" title="Корейский">Ko</li>
+          <li class="header__langs_li" title="Молдавский">Mo</li>
+          <li class="header__langs_li" title="Португальский">Pt</li>
+          <li class="header__langs_li" title="Румынский">Ro</li>
+          <li class="header__langs_li" title="Турецкий">Tr</li>
+          <li class="header__langs_li" title="Французский">Fr</li>
+          <li class="header__langs_li" title="Японский">Ja</li>
+          <li class="header__langs_li" title="Немецкий">De</li>
+        </ul>
+      </div>
+      <button class="button button__outline" onclick="window.open('https://app.domino-crm.com/','_blank')">
+        Создать чат-бот
+      </button>
+      <div class="header__mob-menu js-open-mob-menu ">
+        <div class="header__mob-menu_line"></div>
+        <div class="header__mob-menu_line"></div>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu">
+    <div class="mobile-menu__ellipse-blue"></div>
+    <div class="mobile-menu__ellipse-purple"></div>
+    <div class="mobile-menu__links-block">
+      @@include('_header-menu.html')
+      @@include('_social-menu.html')
+    </div>
+    <button class="button button__solid" onclick="document.location='404.html'">
+      Создать чат-бот
+    </button>
+  </div>
